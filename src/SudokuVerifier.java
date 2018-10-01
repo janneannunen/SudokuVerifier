@@ -21,10 +21,12 @@ public class SudokuVerifier {
 		//writeMatrix(matrix);
 		if (solve(0,0,matrix)) {   // solves in place
 			System.out.println("Verify pass");
+			return 1;
 		}
 		   // writeMatrix(matrix);
-		else {System.out.println("Verify fail");}
-		return 0;
+		else {System.out.println("Verify fail");
+		return 0;}
+		
 		
 		//check
 	}
